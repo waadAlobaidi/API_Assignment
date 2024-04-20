@@ -16,7 +16,7 @@ public class BookBaseUrl {
     public void setUp(){
 
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://restful-booker.herokuapp.com")
+                .setBaseUri("https://reqres.in/api")
                 .build();
 
     }
