@@ -1,7 +1,6 @@
-package requests;
+package HomeWorks;
 
 import base_url.JsonPlaceHolderBaseUrl;
-import base_url.JsonPlaceHolderTestData;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 

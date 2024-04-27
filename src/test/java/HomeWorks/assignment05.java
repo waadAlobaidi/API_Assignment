@@ -1,4 +1,4 @@
-package requests;
+package HomeWorks;
 import base_url.BookBaseUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

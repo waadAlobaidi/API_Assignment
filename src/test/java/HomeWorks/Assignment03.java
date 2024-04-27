@@ -1,4 +1,4 @@
-package requests;
+package HomeWorks;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

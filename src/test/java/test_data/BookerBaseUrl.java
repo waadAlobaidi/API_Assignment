@@ -1,21 +1,19 @@
-package base_url;
+package test_data;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
+public class BookerBaseUrl {
 
-public class JsonPlaceHolderBaseUrl {
     protected RequestSpecification spec;
 
     @BeforeMethod
-    public void setSpec() {
+    public void setUp() {
 
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://jsonplaceholder.typicode.com")
+                .setBaseUri("https://petstore.swagger.io/v2")
                 .setContentType(ContentType.JSON)
                 .build();
     }
-
-
 }
-

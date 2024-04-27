@@ -1,4 +1,4 @@
-package requests;
+package HomeWorks;
 
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -29,7 +29,6 @@ public class Assignmenr04 {
 
     @Test
     public void homeWork04(){
-
 //        1. Set the URL
 //        https://reqres.in/api/users/2
         String url = "https://reqres.in/api/users/2";
