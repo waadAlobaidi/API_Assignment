@@ -1,15 +1,20 @@
 package pojos;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-
 public class ContactListAddUserPojo{
-    private String _id;
     private String firstName;
     private String lastName;
     private String password;
     private String email;
+
+    public ContactListAddUserPojo() {
+    }
+
+    public ContactListAddUserPojo(String firstName, String lastName, String password, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.email = email;
+    }
 
     public void setFirstName(String firstName){
         this.firstName = firstName;
@@ -42,18 +47,11 @@ public class ContactListAddUserPojo{
     public String getEmail(){
         return email;
     }
-    public void set_id(String _id) {
-        this._id = _id;
-    }
-
-    public String get_id() {
-        return _id;
-    }
 
     @Override
     public String toString(){
         return
-                "HomeWork15Pojo{" +
+                "ContactListAddUserPojo{" +
                         "firstName = '" + firstName + '\'' +
                         ",lastName = '" + lastName + '\'' +
                         ",password = '" + password + '\'' +

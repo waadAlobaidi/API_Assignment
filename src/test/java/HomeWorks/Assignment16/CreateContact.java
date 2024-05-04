@@ -1,11 +1,10 @@
-package HomeWorks.Assignment15;
+package HomeWorks.Assignment16;
 
-import Utilities.ObjectMapperUtils;
 import base_url.ContactUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+import pojos.ContactListAddContactPojo;
 import pojos.ContactListAddUserPojo;
-import pojos.UserPojo;
 
 import static Utilities.ObjectMapperUtils.convertJsonToJava;
 import static io.restassured.RestAssured.given;
@@ -35,7 +34,7 @@ public class CreateContact extends ContactUrl {
                 }
                 """;
 
-        ContactListAddUserPojo expectedData = convertJsonToJava(strJson, ContactListAddUserPojo.class);
+        ContactListAddContactPojo expectedData = convertJsonToJava(strJson, ContactListAddContactPojo.class);
 
         //send the request and get the response
         Response response = given(spec).header("Authorization", "Bearer " + token).body(expectedData).post("{1}");
